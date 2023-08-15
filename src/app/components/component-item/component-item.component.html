@@ -1,0 +1,16 @@
+<div class="company-item"
+     (click)="redirectToDetail(company.id)">
+  <div class="company-item-logo">
+    <img [src]="company.logo" alt="company-logo">
+  </div>
+  <div class="company-item-info">
+    <h2>
+      <span>{{company.business_name}}</span>
+      <span>{{company.suffix}}</span>
+    </h2 >
+    <div class="company-item-info-description">
+      <p>{{company.industry}}</p>
+      <p>{{company.type}}</p>
+    </div>
+  </div>
+</div>

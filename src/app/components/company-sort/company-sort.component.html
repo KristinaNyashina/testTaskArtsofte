@@ -1,0 +1,18 @@
+<div class="sort-item">
+  <p>Сортировать по:</p>
+  <div class="{{activeClassName}} sort-item-values">
+    <button
+      (click)="sortCompanies('business_name')"
+      class="button_name"
+    >Названию</button>
+    <button
+      (click)="sortCompanies('type')"
+      class="button_type"
+    >Типу</button>
+    <button
+      (click)="sortCompanies('industry')"
+      class="button_industry"
+    >Виду деятельности</button>
+  </div>
+</div>
+

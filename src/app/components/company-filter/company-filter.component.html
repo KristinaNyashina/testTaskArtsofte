@@ -1,0 +1,25 @@
+<div class="filter-item">
+  <form [formGroup]="filter">
+    <div class="filter-item-name">
+      <input
+             formControlName="name"
+             placeholder="Название компании"
+             (input)="filterCompanyList()"/>
+    </div>
+    <div class="filter-item-select">
+      <div class="filter-item-select-item">
+        <select formControlName="type" (change)="filterCompanyList()">
+          <option [text]="'Тип компании'" [value]="''"></option>
+          <option *ngFor = "let type of getListType" [value]="type">{{type}} </option>
+        </select>
+      </div>
+      <div class="filter-item-select-item">
+        <select formControlName="industry" (change)="filterCompanyList()">
+          <option [text]="'Вид деятельности'" [value]="''"></option>
+          <option *ngFor = "let industry of getListIndustry" [value]="industry">{{industry}}</option>
+        </select>
+      </div>
+    </div>
+
+  </form>
+</div>

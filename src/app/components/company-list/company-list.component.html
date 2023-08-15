@@ -1,0 +1,9 @@
+<app-company-filter></app-company-filter>
+<app-company-sort></app-company-sort>
+<ng-container *ngIf="getCompanyList | async as companyList">
+  <div *ngFor="let company of companyList">
+    <app-component-item
+      [company]="company"
+    ></app-component-item>
+  </div>
+</ng-container>

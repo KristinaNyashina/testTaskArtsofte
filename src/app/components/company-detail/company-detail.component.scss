@@ -1,0 +1,47 @@
+.company-item {
+  display: flex;
+  gap: 50px;
+  margin: 70px auto 0;
+  justify-content: space-around;
+  position: relative;
+  border: 1px solid #e5e5e5;
+  padding: 30px 40px;
+  border-radius: 0.4rem;
+
+  .company-item-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 300px;
+    }
+  }
+
+  .company-item-info {
+    width: 40%;
+
+    .company-item-title {
+      font-size: 28px;
+
+      span {
+        padding-right: 5px;
+      }
+    }
+
+    .company-item-info-description {
+      display: flex;
+      gap: 10px;
+
+      p {
+        background-color: #F2F2F2;
+        padding: 10px 20px;
+        border-radius: 0.25rem;
+        font-size: 14px;
+      }
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}

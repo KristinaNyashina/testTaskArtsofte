@@ -1,0 +1,56 @@
+.mapPageClass{
+  .map{
+    background-color: #363636;
+    color: white;
+  }
+}
+
+.listPageClass{
+  .list{
+    background-color: #363636;
+    color: white;
+  }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 20px;
+  align-items: center;
+
+  .header-title{
+    font-size: 14px;
+    color: #444444;
+  }
+
+  .header-menu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .header_buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  button{
+    border-radius: 0.4rem;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    color: #2C2C2C;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    .active{
+      border-color: #2C2C2C;
+    }
+
+    //&:hover{
+    //  background: #f1f1f1;
+    //}
+
+  }
+}

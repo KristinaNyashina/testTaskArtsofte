@@ -1,0 +1,48 @@
+.sort-item{
+  margin: 10px auto;
+  display: flex;
+  gap:20px;
+  align-items: center;
+  padding-left: 15px;
+
+  .sort-item-values{
+    display: flex;
+    gap: 10px;
+
+    button {
+      border-radius: 0.4rem;
+      border: 1px solid #BDBDBD;
+      padding: 5px 20px;
+      cursor: pointer;
+      background-color: white;
+    }
+  }
+}
+
+.business_namePageClass{
+  .button_name{
+    background-color: #2C2C2C !important;
+    color: white;
+  }
+  .button_type, .button_industry{
+    background-color: white;
+  }
+}
+.typePageClass{
+  .button_type{
+    background-color: #2C2C2C !important;
+    color: white;
+  }
+  .button_name, .button_industry{
+    background-color: white;
+  }
+}
+.industryPageClass{
+  .button_industry{
+    background-color: #2C2C2C !important;
+    color: white;
+  }
+  .button_type, .button_name{
+    background-color: white;
+  }
+}

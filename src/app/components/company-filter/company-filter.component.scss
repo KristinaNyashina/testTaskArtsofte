@@ -1,0 +1,55 @@
+.filter-item{
+  form{
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .filter-item-name{
+      width: 55%;
+      color: #2C2C2C;
+    }
+    input{
+      width: 100%;
+      color: #2C2C2C;
+    }
+
+    .filter-item-select{
+      width: 50%;
+      display: flex;
+      gap: 10px;
+    }
+
+    .filter-item-select-item{
+      select{
+        width: 100%;
+        color: #2C2C2C;
+      }
+      option{
+        width: inherit;
+
+      }
+
+      &:focus{
+         outline: none;
+         border: none;
+       }
+    }
+  }
+}
+
+input, select, option{
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 1rem;
+  background: #F4F4F4;
+  border: none;
+  padding: 0 15px;
+  color: #7e7e7e;
+  outline: none;
+}
+
+
+
+
+
